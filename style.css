@@ -1,0 +1,26 @@
+body {
+  padding: 0 30% 0;
+  background: aquamarine;
+  font-size: 26px;
+  animation: .05s linear 0s infinite alternate dcp, .5s linear 0s infinite alternate rot;
+}
+
+@keyframes dcp {
+  from {
+    background: red;
+    color: #fff;
+  }
+  to {
+    background: #fff;
+    color: #000;
+  }
+}
+
+@keyframes rot {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
